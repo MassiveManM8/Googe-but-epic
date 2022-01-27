@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+
+    "name": "google but epic",
+    "version": "0.1.0",
+    "description": "'right ole cheeky bastard inh'e'",
+
+    "icons": { "16": "share_img.png",
+           "48": "share_img.png",
+          "128": "share_img.png" },
+
+    "content_scripts": [{
+    "css": ["style.css"],
+    "js": ["script.js"],
+    "matches": ["https://*/*"]
+    }],
+
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+
+    "permissions": ["activeTab"]
+}
